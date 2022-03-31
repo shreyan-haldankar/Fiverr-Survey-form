@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="title">Fiverr Client Survey Form</h1>
+      <p class="" id="description">
+        <em>Thank you for taking this time to help us improve our services</em>
+      </p>
+    </header>
+    <form action="" id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" required placeholder="Enter your name" />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Enter your Email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input
+          id="number"
+          type="number"
+          min="10"
+          max="100"
+          placeholder="Enter your age"
+        />
+      </div>
+
+      <div class="form-group">
+        <p class="label2">Which option best describes your current role?</p>
+        <select name="role" id="dropdown" class="form-control" required="">
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="startup">Startup</option>
+          <option value="developer">Developer</option>
+          <option value="company">Company Manager</option>
+          <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p class="form-prompt">
+          Would you recommend me as a Developer to a friend?
+        </p>
+        <label for="">
+          <input
+            class="fcc-recommend"
+            name="fcc-recommend"
+            id=""
+            type="radio"
+            value="definitely"
+            checked
+          />
+          Definitely
+        </label>
+        <label for="">
+          <input
+            class="fcc-recommend"
+            name="fcc-recommend"
+            id=""
+            type="radio"
+            value="Not-Sure"
+            checked
+          />
+          Maybe
+        </label>
+        <label for="">
+          <input
+            class="fcc-recommend"
+            name="fcc-recommend"
+            id=""
+            type="radio"
+            value="definitely"
+            checked
+          />
+          Not Sure
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="feature" class="form-prompt"
+          >What is your favorite part of the Project?
+        </label>
+        <select name="role" id="dropdown2" class="form-control" required="">
+          <option value="Front-End">Front-End</option>
+          <option value="Back-End">Back-End</option>
+          <option value="ui_design">UI Design</option>
+          <option value="Performance_responsiveness">
+            Responsiveness of the Project
+          </option>
+          <option value="Logic Building">Logic Building</option>
+          <option value="dynamic">Dynamic Behaviour</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p class="label2">
+          What other type of Projects would you like me to Work on? (Check all
+          that apply)
+        </p>
+        <label for="">
+          <input
+            type="checkbox"
+            value="Front_end"
+            name="improvements"
+            class="improvements"
+          />
+          Front-end Development Projects
+        </label>
+        <label for="">
+          <input
+            type="checkbox"
+            value="Back-end"
+            name="improvements"
+            class="improvements"
+          />
+          Back-end Development Projects
+        </label>
+        <label for="">
+          <input
+            type="checkbox"
+            value="Data-Visualization"
+            name="improvements"
+            class="improvements"
+          />
+          Data Visualization Projects
+        </label>
+        <!-- <label for="">
+            <input
+              type="checkbox"
+              value="Challenges"
+              name="improvements"
+              class="improvements"
+            />
+            Challenges
+          </label> -->
+        <label for="">
+          <input
+            type="checkbox"
+            value="Open_Source_Community"
+            name="improvements"
+            class="improvements"
+          />
+          Open Source Projects
+        </label>
+        <label for="">
+          <input
+            type="checkbox"
+            value="gitter"
+            name="improvements"
+            class="improvements"
+          />
+          Data Science Projects
+        </label>
+        <!-- <label for="">
+          <input
+            type="checkbox"
+            value="videos"
+            name="improvements"
+            class="improvements"
+          />
+          Videos
+      </label> -->
+        <!-- <label for="">
+          <input
+            type="checkbox"
+            value="city_meetups"
+            name="improvements"
+            class="improvements"
+          />
+          City Meetups
+      </label>
+      <label for="">
+          <input
+            type="checkbox"
+            value="wiki"
+            name="improvements"
+            class="improvements"
+          />
+          Wiki
+      </label> -->
+        <label for="">
+          <input
+            type="checkbox"
+            value="forum"
+            name="improvements"
+            class="improvements"
+          />
+          Computer Vision Projects
+        </label>
+        <label for="">
+          <input
+            type="checkbox"
+            value="additional_courses"
+            name="improvements"
+            class="improvements"
+          />
+          Mobile friendly Projects
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p class="form-prompt">Any comments or suggestions?</p>
+        <textarea
+          name="comments"
+          id="comments"
+          cols="100"
+          rows="10"
+          placeholder="Comments..."
+        ></textarea>
+      </div>
+      <button id="submit" type="submit">SUBMIT</button>
+      <!--       <a href="#" id="submit" class="submit-button">Submit</a> -->
+    </form>
+  </body>
+</html>

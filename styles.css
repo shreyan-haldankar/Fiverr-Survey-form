@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
+
+.body {
+  font-family: "Poppins", sans-serif;
+}
+
+body::before {
+  /* background: white; */
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: gray;
+  background-image: linear-gradient(
+      115deg,
+      rgba(200, 200, 212, 0.7),
+      rgba(166, 190, 220, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: rgba(33, 33, 89, 1);
+  font-size: 30px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#survey-form {
+  background-color: rgba(33, 33, 55, 0.8);
+  margin: 0px 10%;
+  padding: 5rem 8rem;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 1076px) {
+  #survey-form {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-prompt,
+.label2 {
+  font-size: 25px;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+#dropdown,
+#dropdown2 {
+  padding: 10px;
+  margin: 5px 0px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #222;
+}
+
+.fcc-recommend {
+  /* display: inline-block; */
+  /* margin-right: 0.65rem; */
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.improvements {
+  display: inline-block;
+  margin-right: 0.65rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+#comments {
+  font-size: 20px;
+  color: #222;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#submit {
+  background-color: #55dd55f0;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px 0px;
+  width: 100%;
+
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  background: #7271ba;
+  background-image: -webkit-linear-gradient(top, #7271ba, #3939bf);
+  background-image: -moz-linear-gradient(top, #7271ba, #3939bf);
+  background-image: -ms-linear-gradient(top, #7271ba, #3939bf);
+  background-image: -o-linear-gradient(top, #7271ba, #3939bf);
+  background-image: -webkit-gradient(to bottom, #7271ba, #3939bf);
+  /* height: 40px; */
+  line-height: 40px;
+  color: #ffffff;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 10px 0px;
+  /* border-color-hover: ; */
+  border-style-hover: solid;
+  border-width-hover: 1;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #55ff55f0;
+
+  background: #7171b8;
+  background-image: -webkit-linear-gradient(top, #7171b8, #2a2ab1);
+  background-image: -moz-linear-gradient(top, #7171b8, #2a2ab1);
+  background-image: -ms-linear-gradient(top, #7171b8, #2a2ab1);
+  background-image: -o-linear-gradient(top, #7171b8, #2a2ab1);
+  background-image: -webkit-gradient(to bottom, #7171b8, #2a2ab1);
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
